@@ -1,37 +1,40 @@
+
+body{
+  background: #1E1F25;
+}
+
+
 * {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
-body {
-  background: #1e1f25;
-}
-ul {
-  display: flex;
-  width: 100%;
-  height: 20vh;
-  margin: auto;
-  max-width: 1000px;
-  justify-content: space-between;
-  text-align: center;
+ul{
+	display: flex;
+	width: 100%;
+	height: 20vh;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-between;
+	text-align: center;
 }
 li {
-  padding: 1rem 2rem 1.15rem;
+	padding: 1rem 2rem 1.15rem;
   text-transform: uppercase;
   cursor: pointer;
   color: #ebebeb;
-  min-width: 80px;
-  margin: auto;
+	min-width: 80px;
+	margin: auto;
 }
 
 li:hover {
-  background-image: url("https://scottyzen.sirv.com/Images/v/button.png");
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
   background-size: 100% 100%;
   color: #27262c;
   -webkit-animation: spring 300ms ease-out;
-  animation: spring 300ms ease-out;
+          animation: spring 300ms ease-out;
   text-shadow: 0 -1px 0 #ef816c;
-  font-weight: bold;
+	font-weight: bold;
 }
 li:active {
   transform: translateY(4px);
@@ -75,7 +78,7 @@ li:active {
   }
 }
 
-.shameless-plug {
+.shameless-plug{
   position: absolute;
   bottom: 10px;
   right: 0;
@@ -83,3 +86,108 @@ li:active {
   color: #ccc;
   text-decoration: none;
 }
+
+
+#content {
+  max-width: 600px;
+  margin: 25vh auto;
+}
+
+.testimonial blockquote {
+  margin: 10px 10px 0;
+  background: #efefef;
+  padding: 20px 60px;
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.testimonial blockquote:before,
+.testimonial blockquote:after {
+  content: "\201C";
+  position: absolute;
+  font-size: 80px;
+  line-height: 1;
+  color: #757f9a;
+  font-style: normal;
+}
+
+.testimonial blockquote:before {
+  top: 0;
+  left: 10px;
+}
+
+.testimonial blockquote:after {
+  content: "\201D";
+  right: 10px;
+  bottom: -0.5em;
+}
+
+.testimonial div {
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #efefef;
+  margin: 0 0 0 60px;
+}
+
+.testimonial p {
+  margin: 8px 0 0 20px;
+  text-align: left;
+  color: #fff;
+}
+
+
+
+.contenedor {
+	margin: auto;
+	display: table;
+}
+
+h1 { 
+	position: relative; 
+	float: left;
+	background: #1E1F25;
+	color: #fff;
+	font-size: 2.5em;
+}
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: #1E1F25;
+    border-left: 1px solid #000;
+    animation: escribir 1s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
