@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body {
+  background: #1e1f25;
+}
+ul {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: space-between;
+  text-align: center;
+}
+li {
+  padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+  min-width: 80px;
+  margin: auto;
+}
+
+li:hover {
+  background-image: url("https://scottyzen.sirv.com/Images/v/button.png");
+  background-size: 100% 100%;
+  color: #27262c;
+  -webkit-animation: spring 300ms ease-out;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+  font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@-webkit-keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.shameless-plug {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  padding: 8px 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.helpcenter {
+  color: #ccc;
+  text-align: center;
+}
+.helplink {
+  color: cadetblue;
+}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+html,
+body,
+html * {
+  font-family: "Roboto", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  border: darkred;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  align-self: auto;
+}
+.card {
+  background-color: wheat;
+  padding: 16px;
+  margin: 5px;
+  color: lightslategrey;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  width: 40%;
+}
+.card1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: auto;
+}
+.ptitulo {
+  color: dimgray;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+.plista {
+  color: dimgray;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+.plista2 {
+  color: lightslategray;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 12px;
+}
+.expand {
+}
+.expand__button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgb(245, 227, 195);
+  color: dimgray;
+  font-weight: bold;
+  text-align: left;
+  transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -ms-transition: background 0.2s;
+  -o-transition: background 0.2s;
+}
+.expand__button::after {
+  content: "\25be";
+  float: right;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.expand__button--active {
+  background: wheat;
+}
+.expand__button--active::after {
+  content: "\25b4";
+  float: right;
+}
+
+.expand__content {
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+
+  padding: 0 15px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  border-bottom: 4px solid #27262c;
+  background: dimgray;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.info input,
+.info textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 15px;
+  background: rgb(224, 204, 167);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.appbar {
+  border: none;
+  outline: none;
+  font-style: normal;
+  text-decoration: none;
+  color: #ebebeb;
+}
