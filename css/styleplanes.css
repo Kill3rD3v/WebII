@@ -6,6 +6,22 @@
 body {
   background: #1e1f25;
 }
+button{
+  padding: 1rem 2rem 1.15rem;
+  color: darkred;
+  background-color: rgb(247, 210, 141);
+  border-color: #1e1f25;
+
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button:hover {
+  color: rgb(247, 210, 141);
+  background-color: darkred;
+  cursor: pointer;
+  border-color: #1e1f25;
+}
 ul {
   display: flex;
   width: 100%;
@@ -136,6 +152,8 @@ li:active {
 .ptitulo2{
   color: dimgray;
   text-align: center;
-  
   font-size: 14px;
+}
+form{
+  text-align: center;
 }
