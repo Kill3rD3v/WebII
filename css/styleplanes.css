@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body {
+  background: #1e1f25;
+}
+button{
+  padding: 1rem 2rem 1.15rem;
+  color: darkred;
+  background-color: rgb(247, 210, 141);
+  border-color: #1e1f25;
+
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button:hover {
+  color: rgb(247, 210, 141);
+  background-color: darkred;
+  cursor: pointer;
+  border-color: #1e1f25;
+}
+ul {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  margin: auto;
+  max-width: 1000px;
+  justify-content: space-between;
+  text-align: center;
+}
+li {
+  padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+  min-width: 80px;
+  margin: auto;
+}
+
+li:hover {
+  background-image: url("https://scottyzen.sirv.com/Images/v/button.png");
+  background-size: 100% 100%;
+  color: #27262c;
+  -webkit-animation: spring 300ms ease-out;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+  font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@-webkit-keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.shameless-plug {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  padding: 8px 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.appbar {
+  border: none;
+  outline: none;
+  font-style: normal;
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+.flex-container {
+  display: flex;
+  border: darkred;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  
+  align-items: stretch;
+  align-content: stretch;
+  align-self: auto;
+  width: 100%;
+}
+
+.card {
+  background-color: wheat;
+  padding: 10px;
+  margin-top: 1px;
+  margin: 25px;
+  
+  color: lightslategrey;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  width: 25%;
+  
+}
+
+.ptitulo{
+  color: dimgray;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+.content1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: auto;
+  text-align: center;
+}
+.ptitulo2{
+  color: dimgray;
+  text-align: center;
+  font-size: 14px;
+}
+form{
+  text-align: center;
+}
